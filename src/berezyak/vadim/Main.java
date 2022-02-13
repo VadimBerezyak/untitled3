@@ -11,6 +11,11 @@ public class Main {
                         {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
 
                 };
+        changeArray(arr);
+
+    }
+
+    public static int[][] changeArray(int[][] arr) {
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr[i].length - 1; j++) {
                 arr[i][j] = arr[i][j + 1];
@@ -23,5 +28,7 @@ public class Main {
                 System.out.print(arr[i][j] + " ");
             }
         }
+        return arr;
+
     }
 }

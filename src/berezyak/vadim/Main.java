@@ -19,14 +19,10 @@ public class Main {
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr[i].length - 1; j++) {
                 arr[i][j] = arr[i][j + 1];
-            }
-            arr[i][arr[i].length - 1] = 0;
-        }
-        for (int i = 0; i < arr.length; i++) {
-            System.out.println();
-            for (int j = 0; j < arr[i].length; j++) {
                 System.out.print(arr[i][j] + " ");
             }
+            arr[i][arr[i].length - 1] = 0;
+            System.out.println(arr[i][arr[i].length - 1]);
         }
         return arr;
 
